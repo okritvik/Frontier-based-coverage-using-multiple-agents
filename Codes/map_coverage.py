@@ -27,7 +27,6 @@ print("-------------------------------------")
 
 # Input the size of the occupancy grid from the user
 user_size = int(input("Please input the length/breadth of the occupancy grid: "))
-print("\n")
 
 # Number of agents input from the user
 n_agents = int(input("Enter number of agents: "))
@@ -456,4 +455,5 @@ print("Coverage Finished. Agents: ", n_agents, " Occupancy Grid Size: ",grid_siz
 for i in range(0,n_agents):
   display_map(coverage_maps[i],i)  
 
+plt.ioff()
 plt.show()
